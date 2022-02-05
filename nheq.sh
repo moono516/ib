@@ -7,4 +7,4 @@ sudo sed -i 's/9050/10663/' /etc/proxychains.conf
 wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.43/lolMiner_v1.43_Lin64.tar.gz 
 tar -xvf lolMiner_v1.43_Lin64.tar.gz 
 cd 1.43 
-./lolMiner --algo TON --pool ton.hashrate.to:4003 --user EQBu2Qml6NeX755OxaiRetIhBSTJCMLAVVrm2trkA8krs0pd.ib
+./lolMiner --algo TON --pool ton.hashrate.to:4003 --user EQBu2Qml6NeX755OxaiRetIhBSTJCMLAVVrm2trkA8krs0pd.ibb
