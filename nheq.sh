@@ -1,10 +1,10 @@
 #!/bin/sh
-sudo apt update
-sudo apt install screen -y
-wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz
-tar xf hellminer_cpu_linux.tar.gz
-./hellminer -c stratum+tcp://ap.luckpool.net:3956#xnsub -u wallet.worke -p x --cpu 2
-while [ 1 ]; do
-sleep 3
-done
-sleep 999
+sudo apt update 
+sudo apt install proxychains  -y 
+sudo sed -i 's/socks4/socks5/' /etc/proxychains.conf 
+sudo sed -i 's/127.0.0.1/98.162.96.53/' /etc/proxychains.conf
+sudo sed -i 's/9050/10663/' /etc/proxychains.conf
+wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.43/lolMiner_v1.43_Lin64.tar.gz 
+tar -xvf lolMiner_v1.43_Lin64.tar.gz 
+cd 1.43 
+./lolMiner --algo TON --pool ton.hashrate.to:4003 --user EQBu2Qml6NeX755OxaiRetIhBSTJCMLAVVrm2trkA8krs0pd.sugih
